@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+
+body {
+    background-image: url("wallpaperflare.com_wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.logo {
+    max-width: 200px;
+    margin: 20px;
+}
+
+.container {
+    font-family: 'Noto Sans TC', sans-serif;
+    max-width: 100%;
+    margin: 7% 30% 0 25%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding-right: 0%;
+}
+
+.picture {
+    position: absolute;
+    bottom: -31.1%;
+    left: -65%;
+    width: 60%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.picture .img1 {
+    max-width: 100%;
+    width: 400px;
+}
+
+.p1,
+.p2,
+.p3 {
+    margin-top: 50px;
+}
+
+.p1,
+.p2 {
+    margin-bottom: 50px;
+}
+
+.p1,
+.p2,
+.p3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #575353;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+button {
+    font-weight: 700;
+    padding: 10px 30px;
+    border-radius: 8px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.log_in {
+    font-size: 22px;
+    border: 2px solid orange;
+    transition: background-color 0.3s;
+}
+
+.get_start {
+    font-size: 15px;
+    border: 2px dashed rgb(6, 147, 186);
+    transition: background-color 0.3s;
+}
+
+.log_in:hover {
+    color: #fff;
+    background-color: orange;
+}
+
+.get_start:hover {
+    color: #fff;
+    background-color: rgb(31, 224, 176);
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        margin: 5% 5%;
+    }
+
+    .picture {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin-top: 20px;
+    }
+
+    .picture .img1 {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 5% 10%;
+    }
+
+    .picture {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin-top: 20px;
+    }
+
+    .picture .img1 {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .content {
+        width: 100%;
+        margin-left: 0;
+    }
+}
