@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+
+body {
+    background-image: url("wallpaperflare.com_wallpaper.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.logo {
+    max-width: 200px;
+    display:block;
+    margin:0 0 0 41%;
+    padding: 40px 0px 0px 0px;
+}
+
+.container {
+    font-family: 'Noto Sans TC', sans-serif;
+    max-width: 100%;
+    margin: 7% 30% 0 25%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding-right: 0%;
+}
+
+.picture {
+    position: absolute;
+    bottom: -8.5%;
+    left: -65%;
+    width: 60%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.picture .img1 {
+    max-width: 100%;
+    width: 400px;
+}
+.contact,
+.p1,
+.p2,
+.p3 {
+    margin-top: 50px;
+}
+
+.p1,
+.p2 {
+    margin-bottom: 50px;
+}
+
+.p1,
+.p2,
+.p3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #575353;
+}
+.contact{
+    margin-top: 50px;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #575353;
+}
+.contact:visited,
+.contact:hover{
+    text-decoration: underline;
+    color:rgb(236, 224, 209);
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+button {
+    font-weight: 700;
+    padding: 10px 30px;
+    border-radius: 8px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.log_in {
+    font-size: 22px;
+    border: 2px solid orange;
+    transition: background-color 0.3s;
+}
+
+.get_start {
+    font-size: 15px;
+    border: 2px dashed rgb(6, 147, 186);
+    transition: background-color 0.3s;
+}
+
+.log_in:hover {
+    color: #fff;
+    background-color: orange;
+}
+
+.get_start:hover {
+    color: #fff;
+    background-color: rgb(31, 224, 176);
+}
+.doctor {
+    font-weight: 600;
+    position: absolute;
+    top: -10%;
+    right: -50%;
+    padding: 20px;
+    max-width: 40%; 
+    word-wrap: break-word; 
+    color: #575353;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        margin: 5% 5%;
+    }
+
+    .picture {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin-top: 20px;
+    }
+
+    .picture .img1 {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 5% 10%;
+    }
+
+    .picture {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin-top: 20px;
+    }
+
+    .picture .img1 {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .content {
+        width: 100%;
+        margin-left: 0;
+    }
+}
